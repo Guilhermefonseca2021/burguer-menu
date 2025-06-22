@@ -1,4 +1,5 @@
 import CardProduct from "../../../components/cardProduct";
+import Header from "../../../components/header";
 import SideBar from "../../../components/sideBar";
 
 export default function ProductsToCart() {
@@ -34,23 +35,25 @@ export default function ProductsToCart() {
   ];
 
   return (
-    <div className="flex min-h-screen">
-      <SideBar />
-
-      <main className="flex-1 p-6 bg-gray-50">
-        <h1 className="text-2xl font-bold mb-4">Products To Cart</h1>
-        <div className="grid grid-cols-4 gap-6">
-        {products.map((product) => (
-        <CardProduct
-            key={product.id}
-            name={product.name}
-            price={product.price}
-            image={product.image}
-            description={product.description}
-        />
-        ))}
-        </div>
-      </main>
-    </div>
+    <>
+      <Header />
+      <div className="flex min-h-screen">
+        <SideBar />
+        <main className="flex-1 p-6 bg-gray-50">
+          <h1 className="text-2xl font-bold mb-4">Products To Cart</h1>
+          <div className="grid grid-cols-4 gap-6">
+          {products.map((product) => (
+          <CardProduct
+              key={product.id}
+              name={product.name}
+              price={product.price}
+              image={product.image}
+              description={product.description}
+          />
+          ))}
+          </div>
+        </main>
+      </div>
+    </>
   );
 }

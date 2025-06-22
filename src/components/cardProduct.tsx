@@ -1,3 +1,5 @@
+import useCartStore from "../hooks/useCartStore";
+
 interface CardProps {
   name: string;
   description?: string;
@@ -6,6 +8,18 @@ interface CardProps {
 }
 
 export default function CardProduct({ name, description, price, image }: CardProps) {
+  const setCartToProduct = useCartStore((state) => state.setCartProducts);
+
+  const handleAddToCart = () => {
+    setCartToProduct({
+      name,
+      description,
+      price,
+      image,
+      quantity: 1, // Default quantity to 1
+    });
+  };
+
   return (
     <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
       <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
@@ -16,13 +30,11 @@ export default function CardProduct({ name, description, price, image }: CardPro
         <div className="absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
       </div>
 
-      {/* Conteúdo */}
       <div className="p-6">
         <div className="mb-3 flex items-center justify-between">
           <h5 className="block font-sans text-xl font-medium leading-snug tracking-normal text-blue-gray-900 antialiased">
             {name}
           </h5>
-
           {price && (
             <span className="text-lg font-bold text-pink-500">
               ${price.toFixed(2)}
@@ -39,9 +51,9 @@ export default function CardProduct({ name, description, price, image }: CardPro
 
       <div className="pt-2 mb-2">
         <button
-            className="inline-block cursor-pointer w-full p-3 rounded-lg bg-blue-500 px-6 py-3 text-center text-sm font-bold uppercase leading-normal text-white transition-all hover:bg-blue-600 focus:bg-blue-600 active:bg-blue-700"
+          className="inline-block cursor-pointer w-full p-3 rounded-lg bg-blue-500 px-6 py-3 text-center text-sm font-bold uppercase leading-normal text-white transition-all hover:bg-blue-600 focus:bg-blue-600 active:bg-blue-700"
           type="button"
-          onClick={() => alert(`Added ${name} to cart!`)}
+          onClick={handleAddToCart}
         >
           Add to Cart
         </button>
