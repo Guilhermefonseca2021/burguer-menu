@@ -1,7 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import Router from "./routes";
 import './App.css'
-import './Index.css'
 
 export default function App() {
   return (

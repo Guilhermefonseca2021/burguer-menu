@@ -13,23 +13,23 @@ export default function ProductsToCart() {
     },
     {
       id: 2,
-      name: "Mac Burguer",
+      name: "MacBurguer",
       price: 12.99,
       description: "queijo, alface, molho especial, picles e cebola.",
       image: "https://tse1.mm.bing.net/th?id=OIP.fwTe7B4fRNiIXrag4DawjAHaE8&pid=Api&P=0&h=180",
     },
     {
       id: 3,
-      name: "Spider Burguer",
+      name: "Spider BIG",
       price: 15.99,
       description: "duplo, muito bacon, cheddar e molho picante.",
       image: "https://tse3.mm.bing.net/th?id=OIP.3SF6k9boK0QfbWzS-HtzXAHaE7&pid=Api&P=0&h=180",
     },
     {
       id: 4,
-      name: "Mr. Burguer",
+      name: "Mr.Burguer",
       price: 24.99,
-      description: "Três camadas de carne, queijo, bacon crocante.",
+      description: "Três camadas de carne, queijo, bacon crocante. Molho especial.",
       image: "https://tse2.mm.bing.net/th?id=OIP.Eu9KH3sB_bmomkiY_umZeQHaE7&pid=Api&P=0&h=180",
     },
   ];

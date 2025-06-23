@@ -1,8 +1,8 @@
 interface CartProduct {
-    id: number,
+    id?: number,
     name: string,
     price: number,
-    description: string,
+    description?: string,
     image: string,
     quantity: number, 
 }
