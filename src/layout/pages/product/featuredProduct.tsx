@@ -2,7 +2,7 @@
 export default function FeaturedProduct() {
   return (
     <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <div className="flex flex-col items-center md:flex-row">
+        {/* <div className="flex flex-col items-center md:flex-row">
             <div className="md:w-1/3 p-4 relative">
             <div className=" ">
                 <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/k/8/k/15-fa1226tx-gaming-laptop-hp-original-imah4bjbx8ctzdg6.jpeg" alt="HP Victus Laptop" className="w-full h-auto object-cover rounded-lg"/>
@@ -49,7 +49,7 @@ export default function FeaturedProduct() {
                 </button>
             </div>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
