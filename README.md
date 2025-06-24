@@ -5,16 +5,7 @@ Este é um projeto de site simples com um formulário onde o cliente pode montar
 ## 📋 Funcionalidades
 
 Formulário com campos para o cliente escolher:
-
-Tipo de pão
-Tipo de carne
-Queijos
-Molhos
-Adicionais (ex: bacon, cebola caramelizada, alface, tomate, etc)
-Bebida (opcional)
-
 Observações extras
-
 Validação básica dos campos obrigatórios
 Envio do pedido para um email (ou pode ser salvo em um banco de dados, dependendo da implementação)
 Layout responsivo para mobile e desktop
@@ -31,19 +22,21 @@ Estilo simples, direto e fácil de usar
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/seu-usuario/burguer-menew.git
 ```
 
 Abra o projeto em seu editor de código preferido.
 Acesse o site no navegador e teste o formulário.
 
-## ✅ Melhorias futuras
+## ✅ Melhorias para implementar ambiente de desenvolvimento
 
 Adicionar sistema de autenticação para clientes
 Painel de administração para visualizar os pedidos
 Integração com meios de pagamento online
 Layout mais sofisticado com imagens dos ingredientes
 Confirmação de pedido por email ou WhatsApp
+
+<a href="https://burguer-git-main-guilhermefonseca2021s-projects.vercel.app/"> Clique aqui para ver em producao. </a>
 
 ## 📞 Contato
 

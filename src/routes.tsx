@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Product from './layout/pages/product/featuredProduct';
+import Product from './layout/pages/product/FeaturedProduct';
 import Login from './layout/pages/_auth/Login';
 import ProductsToCart from './layout/pages/product/ProductsToCart';
 import GlobalLayout from './layout/GlobalLayout';
@@ -17,3 +17,4 @@ export default function App() {
     </Routes>
   );
 }
+
