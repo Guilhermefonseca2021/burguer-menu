@@ -1,12 +1,15 @@
+import useCartStore from "../hooks/useCartStore";
 
-export default function CartModal({name, quantity, price, image}: CartProduct) {
+export default function CartModal({id, name, quantity, price, image}: CartProduct) {
+  const removeThisProduct = useCartStore((state) => state.removeThisProduct);
+    
   return (
     <div
-        className="relative w-screen max-w-xs border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 lg:px-8"
+        className="relative w-screen max-w-fit border border-gray-600 bg-gray-100 px-2 py-4 sm:px-6 lg:px-4"
         aria-modal="true"
         role="dialog"
         >
-        <button className="absolute end-4 top-4 text-gray-600 transition hover:scale-110">
+        <button onClick={() => removeThisProduct && removeThisProduct(id!)} className="absolute end-4 top-4 text-gray-600 transition hover:scale-110">
             <span className="sr-only">Close cart</span>
 
             <svg
