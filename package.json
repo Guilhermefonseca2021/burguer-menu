@@ -33,6 +33,14 @@
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
   },
+  "optionalDependencies": {
+     "@rollup/rollup-linux-x64-gnu": "<YOUR_VERSION>"
+  },
+    "overrides": {
+      "vite": {
+        "rollup": "npm:@rollup/wasm-node"
+      }
+  },
   "description": "Este é um projeto de site simples com um formulário onde o cliente pode montar seu próprio burger escolhendo os ingredientes desejados e enviar o pedido para a equipe responsável pela produção.",
   "main": "eslint.config.js",
   "author": "",
